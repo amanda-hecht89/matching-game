@@ -1,0 +1,19 @@
+.cardGrid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+button {
+    color: lightcoral;
+    border: 3px solid lightcoral;
+    border-radius: 15px;
+}
+
+.matchGame {
+    max-width: 860px;
+    margin: 40px auto;
+}
+
+

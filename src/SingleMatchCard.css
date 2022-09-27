@@ -1,0 +1,40 @@
+.card {
+    position: relative;
+}
+
+.card img {
+    width: 95%;
+    display: block;
+    border: 6px solid lightcoral;
+}
+
+.cardGrid {
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.card .front {
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+    position: absolute;
+    width: 95%;
+}
+
+.flipped .front {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.card .back {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.flipped .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
